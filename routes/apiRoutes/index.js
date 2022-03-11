@@ -1,8 +1,7 @@
 // central hub
-// const express = require('express');
-// const router = express.Router();
+const router = require('express').Router();
+const notesRoutes = require('../apiRoutes/notesRoutes.js');
 
-// router.use(require('./htmlRoutes'));
-// router.use(require('./apiRoutes.js'));
+router.use(notesRoutes);
 
-// module.exports = router;
+module.exports = router;

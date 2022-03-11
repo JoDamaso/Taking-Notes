@@ -1,12 +1,13 @@
 const { validateNote, createNote, findById, filterByQuery} = require('../../lib/notes');
 const router = require('express').Router();
-const { notes } = require('../../d/notes.json');
+const { notes } = require('../../db/notes.json');
 // need get all notes 
 // need get a note by 'id'
 // need post a note to body
 // need to delete a note 
 
 // GET all Notes
+// DONE bitch
 router.get('/notes', (req, res) => {
     let results = notes;
     if (req.query) {
@@ -17,23 +18,25 @@ router.get('/notes', (req, res) => {
 
 // GET Note by 'id'
 router.get('/notes/:id', (req, res) => {
-    const result = findById(req.params.id);
+    const result = findById(req.params.id, notes);
     if (result) {
         res.json(result);
+    } else {
+        res.sendStatus(404);
     }
-    res.json(result);
 });
 
 // POST note 
 // users send data from client side of application to server
 router.post('/notes', (req, res) => {
+    req.body.id = notes.length.toString();
     // if any data in ther req.body is incorrect, send 400 error back
-    if (!validateNote(req.body)) {
-        res.status(400).send('The note was formatted correctly');
-    } else {
-    const note = createNote(req.body, animals);
+    // if (!validateNote(req.body)) {
+    //     res.status(400).send('The note was formatted correctly');
+    // } else {
+    const note = createNote(req.body, notes);
     res.json(note);
-    }
+    // }
 });
 
 router.delete('/notes/:id', (req, res) => {
