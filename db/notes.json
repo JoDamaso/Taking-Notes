@@ -1,14 +1,19 @@
 {
-    "notes": [
-        {
-            "id": "1",
-            "title":"Test Title",
-            "text":"Test text"
-        },
-        {
-            "id": "2",
-            "title":"testies",
-            "text":"testies text"
-        }
-    ]
+  "notes": [
+    {
+      "id": "0",
+      "title": "Welcome to my Note Tracker!",
+      "text": "Once you save a Note, it will then populate here. If you'd like to refer back to the note, you can simply click on the Note's Title"
+    },
+    {
+      "title": "Deleting Notes!",
+      "text": "Deleting Notes is as easy is clicking on the desired Note, then clicking on the Trash Can icon!",
+      "id": "1"
+    },
+    {
+      "title": "Hello ",
+      "text": "I am a note\n",
+      "id": "2"
+    }
+  ]
 }

@@ -1,3 +1,4 @@
+// requiring express for our project in the main js file
 const express = require('express');
 
 // enviorment variable 
