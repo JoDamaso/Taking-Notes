@@ -39,6 +39,7 @@ This project is under the license of **ISC**.
 ## Credits
 UT Austin Coding Boot Camp https://techbootcamps.utexas.edu/coding/ <br>
 Dominque Akers https://github.com/Dommy99 <br>
+Jon Taylor https://github.com/DevJonTaylor <br>
 Express https://www.npmjs.com/package/express <br>
 Heroku https://www.heroku.com
 
