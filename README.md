@@ -33,6 +33,9 @@ This is a project to build on my progress with routing. While having persistence
 ![Preview](https://media.discordapp.net/attachments/763615031438606337/953061353218781215/unknown.png?width=895&height=469)
 ![](https://media.discordapp.net/attachments/763615031438606337/953061621440348221/unknown.png)
 
+ ## Deployed site on Heroku
+https://takingnotesjd.herokuapp.com/
+
   ## License 
 This project is under the license of **ISC**.
 
